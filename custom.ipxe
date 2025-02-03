@@ -1,12 +1,13 @@
 #!ipxe
-###
-### netboot.xyz-custom menu example
-###
 
 :custom
 clear custom_choice
-menu This is a Test Menu
-item --gap This is the first sub menu
+
+# Menu Title
+menu Microsoft Windows Install
+
+
+item --gap Windows 10 x86_64
 item option_one ${space} Loading a kernel and initrd
 item option_two ${space} Loading an ISO
 item --gap This is a second sub menu
