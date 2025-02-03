@@ -1,15 +1,21 @@
 #!ipxe
 
+# Microsoft Windows
+# https://www.microsoft.com
+set win_arch x86_64
+set win_image 10
+set win_base_url ${win_base_url}/${win_image}
+
 :custom
 clear custom_choice
 
 # Menu Title
 menu Microsoft Windows Install
 
-
 item --gap Windows 10 x86_64
 item option_one ${space} Loading a kernel and initrd
 item option_two ${space} Loading an ISO
+
 item --gap This is a second sub menu
 item option_three ${space} Loads another custom sub menu
 item option_four ${space} This is option four
